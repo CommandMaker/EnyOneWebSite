@@ -8,23 +8,72 @@ section.Top-page  {
 	
 
 }
+
+
+
+
+
 /* tête de page */
-nav.Menu-nav ul li.boutton-logo {
+nav.menu-nav ul li {
 	list-style: none;
+	padding: 10px;
+}
+
+nav.menu-nav ul li a {
+	color: black;
+	text-decoration: none;
+	font-family: 'Montserrat';
+}
+
+nav.menu-nav ul li a img {
+	border-radius: 30px;
 }
 
 header{
 	display: flex;
-	align-items: center;
-
+	flex-direction: row;
 }
+
+header nav.menu-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header nav.menu-nav div.actions a {
+	color: black;
+	font-family: 'Montserrat';
+	text-decoration: none;
+	padding: 10px;
+}
+
+header nav.menu-nav div.actions {
+	align-items: flex-end;
+}
+
+nav.menu-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+
 header img {
 	width: 50px;
 }
 body{
 	margin: 0 auto;
 }
-/* Acueil */
+
+
+
+
+
+/* Accueil */
 div.landin-page{
 	padding: 20px;
 }
