@@ -1,0 +1,175 @@
+
+section.Top-page  {
+	
+	background: url("../images/ftn.jpg")  ;
+	height: 80vh;
+	background-size: cover ;
+	padding: 25px;
+	
+
+}
+/* tête de page */
+nav.Menu-nav ul li.boutton-logo {
+	list-style: none;
+}
+
+header{
+	display: flex;
+	align-items: center;
+
+}
+header img {
+	width: 50px;
+}
+body{
+	margin: 0 auto;
+}
+/* Acueil */
+div.landin-page{
+	padding: 20px;
+}
+
+
+h1.slogan{
+	color: black;
+	font-size: 40px;
+}
+
+/* Nos meilleur ventes */
+section.Meilleur-ventes{
+	margin: 100px;
+	
+}
+
+h2.H2{
+	font-size: 30px;
+	font-weight: 100;
+	justify-content: space-between;
+	margin-left: 650px;
+	align-items: center;
+}
+
+.Jeux{
+	position: relative;
+	background-size: cover ;
+	background-position: center;
+	min-width: 350px;
+	height: 500px;
+	flex:flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+a.jeux1{
+	background-image: url(../images/Newfarcry.png);
+}
+a.jeux2{
+	background-image: url(../images/trials-fusion-cover.jpg);
+}
+a.jeux3{
+	background-image: url(../images/wow.jpg);
+}
+a.jeux4{
+	background-image: url(../images/Newfarcry.png);
+}
+
+div.jeux-detail{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #4E0DD9;
+	padding: 5px 20px;
+
+}
+p.jeux-name{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 3px;
+}
+p.jeux-price{
+	font-weight: 800;
+	line-height: 3px;
+}
+/* Menu-nav */
+nav.Nav1{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 300px;
+	margin-left: 500px;
+}
+
+/* Menue-nav du jeux */
+nav.Nav2{
+	
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	background-color: coral;
+	width: 300px;
+	
+
+}
+
+
+/*
+*{
+	border:solid 1px;
+	margin: 0px;
+padding: 0px ;
+justify-content: space-between;
+}
+/
+section.top-page{
+background: url("Watch\ dogs\ 2.jpg");
+
+}
+img.Jeux{
+	width: 100%;
+	height: 450%;
+}
+
+}
+
+	a.social{
+		width: 30px;
+		height: 30px;
+	}
+nav.Menu-nav ul li.bouton a{
+	text-decoration: none;
+}
+
+nav.Menu-nav ul li.bouton :hover {
+	color:#4E0DD9;
+	transition animation-delay: 0.3s;;
+}
+nav.Menu-nav{
+	background-color: #161F6C;
+	padding: 12,5px;
+}
+nav.Menu-nav ul li.bouton{
+	display: inline-block;
+	list-style-type: square;
+	color:white ;
+	padding: 25px;
+
+
+}
+
+footer {
+	background-color:  #161F6C;
+}
+}
+}
+
+/
+div.réseaux{
+	background-color: rgba(0, 0, 0, 2);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
