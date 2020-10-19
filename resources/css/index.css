@@ -44,8 +44,7 @@ section.Meilleur-ventes{
 h2.H2{
 	font-size: 30px;
 	font-weight: 100;
-	justify-content: space-between;
-	margin-left: 650px;
+	text-align: center;
 	align-items: center;
 }
 
@@ -107,8 +106,6 @@ nav.Nav2{
 	list-style: none;
 	background-color: coral;
 	width: 300px;
-	
-
 }
 
 
