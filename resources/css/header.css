@@ -1,69 +1,173 @@
 header nav.header-navbar {
-    width: 100%;
-    height: 66px;
-    line-height: 32px;
-    background-color: #111E6C;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  background-color: #111e6c;
 }
 
 header nav.header-navbar div.menu {
-    width: 80%;
-    height: 66px;
-    margin: auto;
+  width: 90%;
+  height: 66px;
+  margin: auto;
 }
 
 header nav.header-navbar div.menu div.menu-left {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    float: left;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  float: left;
 }
 
 header nav.header-navbar div.menu div.menu-left li a {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 10px;
-    text-decoration: none;
-    font-weight: 400;
-    padding: 21px;
-    border-bottom: transparent 2px solid;
-    transition: all 0.3s ease-in-out;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  padding-bottom: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: transparent 2px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 header nav.header-navbar div.menu div.menu-left li a:hover {
-    border-color: white;
+  border-color: white;
 }
 
-header nav.header-navbar div.menu div.menu-left a.logo-link img {
-    border-radius: 30px;
-    margin-top: 6px;
+header nav.header-navbar div.menu a.logo-link {
+  text-decoration: none;
+}
+
+header nav.header-navbar div.menu a.logo-link img {
+  border-radius: 30px;
+  margin-top: 6px;
+  float: left;
+}
+
+header nav.header-navbar div.menu div.logo-name {
+  float: left;
+}
+
+header nav.header-navbar div.menu div.logo-name a {
+  color: white;
+  margin: 20px;
+  font-size: 25px;
+  line-height: 64px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 header nav.header-navbar div.menu div.menu-right {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    float: right;   
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
 }
 
-header nav.header-navbar div.menu div.menu-right li a  {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    padding: 21px;
-    line-height: 66px;
-    font-weight: 400;
-    border-bottom: transparent 2px solid;
-    transition: all 0.3s ease-in-out;
+header nav.header-navbar div.menu div.menu-right li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 66px;
+  font-weight: 400;
+  border-bottom: transparent 2px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Animation */
 header nav.header-navbar div.menu div.menu-right li a:hover {
-    border-color: white;
+  border-color: white;
 }
 
-@media only screen and (max-width: 880px) {
-    header nav.header-navbar div.menu {
-        display: none;
-    }
-    
+header nav.header-navbar div.menu div.menu-right p {
+  font-size: 27px;
+  color: white;
+  display: none;
+}
+
+/* Responsive header */
+
+header nav.header-navbar div.menu div.menu-responsive {
+  width: 60px;
+  height: 45px;
+  margin: 8px auto;
+
+  border: 1px solid white;
+  border-radius: 5px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  cursor: pointer;
+}
+
+header nav.header-navbar div.menu div.menu-responsive p {
+  color: white;
+  font-size: 27px;
+
+  /* padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+/* Toggle header menu */
+
+header nav.header-navbar div.menu div.toggle-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 66px;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background: #323a44;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(200px);
+}
+
+header nav.header-navbar div.menu div.toggle-menu li {
+  list-style: none;
+  text-align: center;
+}
+
+header nav.header-navbar div.menu div.toggle-menu li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  border-bottom: transparent 1px solid;
+  transition: all 0.3s ease-in-out;
+  margin: auto 20px;
+}
+
+header nav.header-navbar div.menu div.toggle-menu li a:hover {
+  border-color: #fff;
+}
+
+                        @media only screen and (max-width: 885px) {
+  header nav.header-navbar div.menu div.menu-left,
+  header nav.header-navbar div.menu div.menu-right {
+    display: none;
+  }
+
+  header nav.header-navbar div.menu div.menu-left,
+  header nav.header-navbar div.menu div.menu-right {
+    text-align: center;
+  }
+
+  header nav.header-navbar div.menu div.menu-left li a,
+  header nav.header-navbar div.menu div.menu-right li a {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  header nav.header-navbar div.menu div.menu-responsive {
+    display: flex;
+  }
 }

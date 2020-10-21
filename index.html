@@ -2,11 +2,14 @@
 <html>
 
 <head>
-  <title> Meast </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1.0">
   <!-- CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- /Fonts -->
   <link rel="stylesheet" type="text/css" href="./resources/css/index.css">
   <link rel="stylesheet" href="./resources/css/header.css">
   <!-- /CSS -->
@@ -17,13 +20,32 @@
   <header>
     <nav class="header-navbar">
       <div class="menu">
+        <a class="logo-link" href="/"><img
+            src="https://thumbs.dreamstime.com/b/contr-leur-icon-logo-de-jeu-de-joypad-de-manette-80753757.jpg" width=50
+            heigth=50></a></li>
+
+        <div class="logo-name">
+          <a href="/">Meast</a>
+        </div>
         <div class="menu-left">
-          <a class="logo-link" href="/"><img src="https://thumbs.dreamstime.com/b/contr-leur-icon-logo-de-jeu-de-joypad-de-manette-80753757.jpg" width=50 heigth=50></a></li>
           <li><a href="/actualités/">Actualités</a></li>
           <li><a href="/communauté/">Communauté</a></li>
           <li><a href="/boutique/">Boutique</a></li>
         </div>
         <div class="menu-right">
+          <li><a href="/">Connexion</a></li>
+          <li><a href="/">Télécharger</a></li>
+        </div>
+        <!-- Responsive menu -->
+        <div class="menu-responsive">
+          <p><i class="fa fa-bars hamburger-icon"></i></p>
+        </div>
+
+        <div class="toggle-menu">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/actualités/">Actualités</a></li>
+          <li><a href="/communauté/">Communauté</a></li>
+          <li><a href="/boutique/">Boutique</a></li>
           <li><a href="/">Connexion</a></li>
           <li><a href="/">Télécharger</a></li>
         </div>
@@ -65,14 +87,10 @@
       </a>
       <a class="Jeux jeux5"></a>
     </div>
-  </section>
+  </section>-->
 
-  <script src="https://ajax.googleapis.com/ajax/lib/jquery/1/jquery.min.js"></script>
-  <script>
-    jQuery(($) => {
-
-    });
-  </script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="./resources/js/responsite_header.js"></script>
 </body>
 
 </html>
