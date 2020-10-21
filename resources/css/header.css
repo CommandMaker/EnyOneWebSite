@@ -96,7 +96,7 @@ header nav.header-navbar div.menu div.menu-responsive {
   height: 45px;
   margin: 8px auto;
 
-  border: 1px solid white;
+  border: 0.5px solid white;
   border-radius: 5px;
 
   display: none;
@@ -149,6 +149,26 @@ header nav.header-navbar div.menu div.toggle-menu li a {
 
 header nav.header-navbar div.menu div.toggle-menu li a:hover {
   border-color: #fff;
+}
+
+.fa-toggle-menu {
+    padding-right: 5px;
+}
+
+.other {
+  margin-top: 10px;
+  border-top: 1px solid white;
+}
+
+header nav.header-navbar div.menu div.header-texture {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  background: #323a44;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 885px) {
