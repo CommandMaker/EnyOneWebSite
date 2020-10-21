@@ -137,19 +137,21 @@ header nav.header-navbar div.menu div.toggle-menu li {
 }
 
 header nav.header-navbar div.menu div.toggle-menu li a {
+  display: block;
+  width: auto;
   color: white;
   text-decoration: none;
   font-family: "Montserrat";
   border-bottom: transparent 1px solid;
   transition: all 0.3s ease-in-out;
-  margin: auto 20px;
+  margin: 0;
 }
 
 header nav.header-navbar div.menu div.toggle-menu li a:hover {
   border-color: #fff;
 }
 
-                        @media only screen and (max-width: 885px) {
+@media only screen and (max-width: 885px) {
   header nav.header-navbar div.menu div.menu-left,
   header nav.header-navbar div.menu div.menu-right {
     display: none;
